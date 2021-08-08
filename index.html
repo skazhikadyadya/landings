@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0044)file:///Users/admn/Desktop/Skinny%20LQD.html -->
 <html dir="ltr" class="translated-ltr">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        name="viewport">
-    <link href="../Скинни%20LQD_files/css" rel="stylesheet">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"  name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Skinny LQD</title>
-    <link
-        href="file:///Users/admn/Downloads/Telegram%20Desktop/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F/%D0%BB%D0%B5%D0%BD%D0%B4/main%20(5)/assets/favicon.png"
-        rel="icon" type="image/x-icon">
-    <link href="../Скинни%20LQD_files/slick.css" rel="stylesheet">
-    <link href="../Скинни%20LQD_files/style.css" rel="stylesheet">
-    <script type="text/javascript"
-        src="file:///Users/admn/Downloads/Telegram%20Desktop/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F/%D0%BB%D0%B5%D0%BD%D0%B4/main%20(5)/script_land.js"
-        defer=""></script>
+    <link href="/favicon.png" rel="icon" type="image/x-icon">
+    <link href="data/slick.css" rel="stylesheet" />
+    <link href="data/style.css" rel="stylesheet" />
+    <script type="text/javascript"  src="/script_land.js"  defer=""></script>
     <style>
         .ever-popup-build {
             position: fixed;
@@ -26,8 +19,7 @@
             top: 0;
             left: -9999px;
         }
-    </style>
-    <style>
+
         .ever-popup__body.ever-mobile {
             display: none
         }
@@ -113,8 +105,699 @@
                 display: block
             }
         }
-    </style>
-    <style>
+        .phoneBtnContainer {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            visibility: hidden;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            z-index: 99;
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            -webkit-transition: visibility .5s;
+            -moz-transition: visibility .5s;
+            -o-transition: visibility .5s;
+            transition: visibility .5s
+        }
+
+        .cbh-phone.cbh-show {
+            visibility: visible
+        }
+
+        @-webkit-keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0)
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                -ms-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0)
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none
+            }
+        }
+
+        @-webkit-keyframes fadeInRightBig {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(2000px, 0, 0);
+                transform: translate3d(2000px, 0, 0)
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none
+            }
+        }
+
+        @-webkit-keyframes fadeOutRight {
+            0% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0)
+            }
+        }
+
+        @keyframes fadeOutRight {
+            0% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                -ms-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0)
+            }
+        }
+
+        .fadeOutRight {
+            -webkit-animation-name: fadeOutRight;
+            animation-name: fadeOutRight
+        }
+
+        .cbh-phone.cbh-static1 {
+            opacity: .6
+        }
+
+        .cbh-phone.cbh-hover1 {
+            opacity: 1
+        }
+
+        .cbh-ph-circle {
+            width: 160px;
+            height: 160px;
+            top: 20px;
+            left: 20px;
+            position: absolute;
+            background-color: transparent;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid rgba(30, 30, 30, .4);
+            opacity: .1;
+            -webkit-animation: cbh-circle-anim 1.2s infinite ease-in-out;
+            -moz-animation: cbh-circle-anim 1.2s infinite ease-in-out;
+            -ms-animation: cbh-circle-anim 1.2s infinite ease-in-out;
+            -o-animation: cbh-circle-anim 1.2s infinite ease-in-out;
+            animation: cbh-circle-anim 1.2s infinite ease-in-out;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s
+        }
+
+        .cbh-phone.cbh-active .cbh-ph-circle1 {
+            -webkit-animation: cbh-circle-anim 1.1s infinite ease-in-out !important;
+            -moz-animation: cbh-circle-anim 1.1s infinite ease-in-out !important;
+            -ms-animation: cbh-circle-anim 1.1s infinite ease-in-out !important;
+            -o-animation: cbh-circle-anim 1.1s infinite ease-in-out !important;
+            animation: cbh-circle-anim 1.1s infinite ease-in-out !important
+        }
+
+        .cbh-phone.cbh-static .cbh-ph-circle {
+            -webkit-animation: cbh-circle-anim 2.2s infinite ease-in-out !important;
+            -moz-animation: cbh-circle-anim 2.2s infinite ease-in-out !important;
+            -ms-animation: cbh-circle-anim 2.2s infinite ease-in-out !important;
+            -o-animation: cbh-circle-anim 2.2s infinite ease-in-out !important;
+            animation: cbh-circle-anim 2.2s infinite ease-in-out !important
+        }
+
+        .cbh-phone.cbh-hover .cbh-ph-circle {
+            border-color: rgba(0, 175, 242, 1);
+            opacity: .5
+        }
+
+        .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle {
+            border-color: rgba(117, 235, 80, 1);
+            opacity: .5
+        }
+
+        .cbh-phone.cbh-green .cbh-ph-circle {
+            border-color: rgba(0, 175, 242, 1);
+            opacity: .5
+        }
+
+        .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle {
+            border-color: rgba(204, 204, 204, 1);
+            opacity: .5
+        }
+
+        .cbh-phone.cbh-gray .cbh-ph-circle {
+            border-color: rgba(117, 235, 80, 1);
+            opacity: .5
+        }
+
+        .cbh-ph-circle-fill {
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            left: 50px;
+            position: absolute;
+            background-color: #000;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            opacity: .1;
+            -webkit-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
+            -moz-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
+            -ms-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
+            -o-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
+            animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s
+        }
+
+        .cbh-phone.cbh-active .cbh-ph-circle-fill {
+            -webkit-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important;
+            -moz-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important;
+            -ms-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important;
+            -o-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important;
+            animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important
+        }
+
+        .cbh-phone.cbh-static .cbh-ph-circle-fill {
+            -webkit-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
+            -moz-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
+            -ms-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
+            -o-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
+            animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
+            opacity: 0 !important
+        }
+
+        .cbh-phone.cbh-hover .cbh-ph-circle-fill {
+            background-color: rgba(0, 175, 242, .5);
+            opacity: .75 !important
+        }
+
+        .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle-fill {
+            background-color: rgba(117, 235, 80, .5);
+            opacity: .75 !important
+        }
+
+        .cbh-phone.cbh-green .cbh-ph-circle-fill {
+            background-color: rgba(0, 175, 242, .5);
+            opacity: .75 !important
+        }
+
+        .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle-fill {
+            background-color: rgba(204, 204, 204, .5);
+            opacity: .75 !important
+        }
+
+        .cbh-phone.cbh-gray .cbh-ph-circle-fill {
+            background-color: rgba(117, 235, 80, .5);
+            opacity: .75 !important
+        }
+
+        .cbh-ph-img-circle1 {
+            width: 60px;
+            height: 60px;
+            top: 70px;
+            left: 70px;
+            position: absolute;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAB/ElEQVR42uya7W3CMBCG31QM4A1aNggTlG6QbpBMkHYC1AloJ4BOABuEDcgGtBOETnD9c1ERCH/lwxeaV8oPFGP86Hy+DxMREW5Bd7gRjSDSNGn4/RiAOvm8C0ZCRD5PSkQVXSr1nK/xE3mcWimA1ZV3JYBZCIO4giQANoYxMwYS6+xKY4lT5dJPreWZY+uspqSCKPYN27GJVBDXheVSQe494ksiEWTuMXcu1dld9SARxDX1OAJ4lgjy4zDnFsC076A4adEiRwAZg4hOUSpNoCsBPDGM+HqkNGynYBCuILuWj+dgWysGsNe8nwL4GsrW0m2fxZBq9rW0rNcX5MOQ9eZD8JFahcG5g/iKT671alGAYQggpYWvpEPYWrU/HDTOfeRIX0q2SL3QN4tGhZJukVobQyXYWw7WtLDKDIuM+ZSzscyCE9PCy5IttCvnZNaeiGLNHKuz8ZVh/MXTVu/1xQKmIqLEAuJ0fNo3iG5B51oSkeKnsBi/4bG9gYB/lCytU5G9DryFW+3Gm+JLwU7ehbJrwTjq4DJU8bHcVbEV9dXXqqP6uqO5e2/QZRYJpqu2IUAA4B3tXvx8hgKp05QZW6dJqrLTNkB6vrRURLRwPHqtYgkC3cLWQAcDQGGKH13FER/NATzi786+BPDNjm1dMkfjn2pGkBHkf4D8DgBJDuDHx9BN+gAAAABJRU5ErkJggg==);
+            background-color: rgba(30, 30, 30, .1);
+            background-position: center center;
+            background-repeat: no-repeat;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            opacity: .7;
+            -webkit-animation: cbh-circle-img-anim 1s infinite ease-in-out;
+            -moz-animation: cbh-circle-img-anim 1s infinite ease-in-out;
+            -ms-animation: cbh-circle-img-anim 1s infinite ease-in-out;
+            -o-animation: cbh-circle-img-anim 1s infinite ease-in-out;
+            animation: cbh-circle-img-anim 1s infinite ease-in-out
+        }
+
+        .cbh-phone.cbh-active .cbh-ph-img-circle1 {
+            -webkit-animation: cbh-circle-img-anim 1s infinite ease-in-out !important;
+            -moz-animation: cbh-circle-img-anim 1s infinite ease-in-out !important;
+            -ms-animation: cbh-circle-img-anim 1s infinite ease-in-out !important;
+            -o-animation: cbh-circle-img-anim 1s infinite ease-in-out !important;
+            animation: cbh-circle-img-anim 1s infinite ease-in-out !important
+        }
+
+        .cbh-phone.cbh-static .cbh-ph-img-circle1 {
+            -webkit-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
+            -moz-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
+            -ms-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
+            -o-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
+            animation: cbh-circle-img-anim 0s infinite ease-in-out !important
+        }
+
+        .cbh-phone.cbh-hover .cbh-ph-img-circle1 {
+            background-color: rgba(0, 175, 242, 1)
+        }
+
+        .cbh-phone.cbh-green.cbh-hover .cbh-ph-img-circle1:hover {
+            background-color: rgba(117, 235, 80, 1)
+        }
+
+        .cbh-phone.cbh-green .cbh-ph-img-circle1 {
+            background-color: rgba(0, 175, 242, 1)
+        }
+
+        .cbh-phone.cbh-green .cbh-ph-img-circle1 {
+            background-color: rgba(0, 175, 242, 1)
+        }
+
+        .cbh-phone.cbh-gray.cbh-hover .cbh-ph-img-circle1 {
+            background-color: rgba(204, 204, 204, 1)
+        }
+
+        .cbh-phone.cbh-gray .cbh-ph-img-circle1 {
+            background-color: rgba(117, 235, 80, 1)
+        }
+
+        @-moz-keyframes cbh-circle-anim {
+            0% {
+                -moz-transform: rotate(0deg) scale(0.5) skew(1deg);
+                opacity: .1;
+                -moz-opacity: .1;
+                -webkit-opacity: .1;
+                -o-opacity: .1
+            }
+
+            30% {
+                -moz-transform: rotate(0deg) scale(.7) skew(1deg);
+                opacity: .5;
+                -moz-opacity: .5;
+                -webkit-opacity: .5;
+                -o-opacity: .5
+            }
+
+            100% {
+                -moz-transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .6;
+                -moz-opacity: .6;
+                -webkit-opacity: .6;
+                -o-opacity: .1
+            }
+        }
+
+        @-webkit-keyframes cbh-circle-anim {
+            0% {
+                -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
+                -webkit-opacity: .1
+            }
+
+            30% {
+                -webkit-transform: rotate(0deg) scale(.7) skew(1deg);
+                -webkit-opacity: .5
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+                -webkit-opacity: .1
+            }
+        }
+
+        @-o-keyframes cbh-circle-anim {
+            0% {
+                -o-transform: rotate(0deg) kscale(0.5) skew(1deg);
+                -o-opacity: .1
+            }
+
+            30% {
+                -o-transform: rotate(0deg) scale(.7) skew(1deg);
+                -o-opacity: .5
+            }
+
+            100% {
+                -o-transform: rotate(0deg) scale(1) skew(1deg);
+                -o-opacity: .1
+            }
+        }
+
+        @keyframes cbh-circle-anim {
+            0% {
+                transform: rotate(0deg) scale(0.5) skew(1deg);
+                opacity: .1
+            }
+
+            30% {
+                transform: rotate(0deg) scale(.7) skew(1deg);
+                opacity: .5
+            }
+
+            100% {
+                transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .1
+            }
+        }
+
+        @-moz-keyframes cbh-circle-fill-anim {
+            0% {
+                -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2
+            }
+
+            50% {
+                -moz-transform: rotate(0deg) -moz-scale(1) skew(1deg);
+                opacity: .2
+            }
+
+            100% {
+                -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2
+            }
+        }
+
+        @-webkit-keyframes cbh-circle-fill-anim {
+            0% {
+                -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2
+            }
+
+            50% {
+                -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .2
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2
+            }
+        }
+
+        @-o-keyframes cbh-circle-fill-anim {
+            0% {
+                -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2
+            }
+
+            50% {
+                -o-transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .2
+            }
+
+            100% {
+                -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2
+            }
+        }
+
+        @keyframes cbh-circle-fill-anim {
+            0% {
+                transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2
+            }
+
+            50% {
+                transform: rotate(0deg) scale(1) skew(1deg);
+                opacity: .2
+            }
+
+            100% {
+                transform: rotate(0deg) scale(0.7) skew(1deg);
+                opacity: .2
+            }
+        }
+
+        @keyframes cbh-circle-img-anim {
+            0% {
+                transform: rotate(0deg) scale(1) skew(1deg)
+            }
+
+            10% {
+                transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+
+            20% {
+                transform: rotate(25deg) scale(1) skew(1deg)
+            }
+
+            30% {
+                transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+
+            40% {
+                transform: rotate(25deg) scale(1) skew(1deg)
+            }
+
+            100%,
+            50% {
+                transform: rotate(0deg) scale(1) skew(1deg)
+            }
+        }
+
+        @-moz-keyframes cbh-circle-img-anim {
+            0% {
+                transform: rotate(0deg) scale(1) skew(1deg)
+            }
+
+            10% {
+                -moz-transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+
+            20% {
+                -moz-transform: rotate(25deg) scale(1) skew(1deg)
+            }
+
+            30% {
+                -moz-transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+
+            40% {
+                -moz-transform: rotate(25deg) scale(1) skew(1deg)
+            }
+
+            100%,
+            50% {
+                -moz-transform: rotate(0deg) scale(1) skew(1deg)
+            }
+        }
+
+        @-webkit-keyframes cbh-circle-img-anim {
+            0% {
+                -webkit-transform: rotate(0deg) scale(1) skew(1deg)
+            }
+
+            10% {
+                -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+
+            20% {
+                -webkit-transform: rotate(25deg) scale(1) skew(1deg)
+            }
+
+            30% {
+                -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+
+            40% {
+                -webkit-transform: rotate(25deg) scale(1) skew(1deg)
+            }
+
+            100%,
+            50% {
+                -webkit-transform: rotate(0deg) scale(1) skew(1deg)
+            }
+        }
+
+        @-o-keyframes cbh-circle-img-anim {
+            0% {
+                -o-transform: rotate(0deg) scale(1) skew(1deg)
+            }
+
+            10% {
+                -o-transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+
+            20% {
+                -o-transform: rotate(25deg) scale(1) skew(1deg)
+            }
+
+            30% {
+                -o-transform: rotate(-25deg) scale(1) skew(1deg)
+            }
+
+            40% {
+                -o-transform: rotate(25deg) scale(1) skew(1deg)
+            }
+
+            100%,
+            50% {
+                -o-transform: rotate(0deg) scale(1) skew(1deg)
+            }
+        }
+
+        .cbh-ph-img-circle1 {}
+
+        .cbh-phone.cbh-green .cbh-ph-circle {
+            border-color: rgba(0, 175, 242, 1)
+        }
+
+        .cbh-phone.cbh-green .cbh-ph-circle-fill {
+            background-color: rgba(0, 175, 242, 1);
+        }
+
+        .cbh-phone.cbh-green .cbh-ph-img-circle1 {
+            background-color: rgba(0, 175, 242, 1);
+        }
+
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        nav,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        legend,
+        input,
+        button,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td,
+        a {
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            -o-transform-origin: center center;
+            transform-origin: center center;
+        }
+
+        @media screen and (max-width: 999px) {
+            #clbh_phone_div {
+                display: none !important;
+            }
+        }
+        .ever-popup-build {
+            position: fixed;
+            opacity: 0;
+            z-index: -1;
+            top: 0;
+            left: -9999px;
+        }
+        .ever-popup__body.ever-mobile {
+            display: none
+        }
+
+        .ever-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .7);
+            z-index: 701;
+            display: none;
+            overflow: auto;
+        }
+
+        .ever-popup__body {
+            position: static;
+            float: none;
+            display: block;
+            margin: 0 auto;
+            width: auto
+        }
+
+        .ever-popup.show {
+            display: block;
+            align-items: center;
+        }
+
+        .ever-popup__inner {
+            position: relative;
+            margin: 0 auto;
+            padding-top: 35px
+        }
+
+        .ever-popup__close {
+            width: 35px;
+            height: 30px;
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+        }
+
+        .ever-popup__close:after,
+        .ever-popup__close:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 35px;
+            height: 10px;
+            background: #fff;
+            transition: all 1s;
+        }
+
+        .ever-popup__close:after {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        .ever-popup__close:before {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        @media screen and (max-width: 999px) {
+            .ever-popup__body.ever-desktop {
+                display: none
+            }
+
+            .ever-popup__body.ever-mobile {
+                display: block
+            }
+        }
         .phoneBtnContainer {
             position: fixed;
             right: 10px;
@@ -717,707 +1400,6 @@
             }
         }
     </style>
-    <link type="text/css" rel="stylesheet" charset="UTF-8" href="../Скинни%20LQD_files/translateelement.css">
-    <style>
-        .ever-popup-build {
-            position: fixed;
-            opacity: 0;
-            z-index: -1;
-            top: 0;
-            left: -9999px;
-        }
-    </style>
-    <style>
-        .ever-popup__body.ever-mobile {
-            display: none
-        }
-
-        .ever-popup {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .7);
-            z-index: 701;
-            display: none;
-            overflow: auto;
-        }
-
-        .ever-popup__body {
-            position: static;
-            float: none;
-            display: block;
-            margin: 0 auto;
-            width: auto
-        }
-
-        .ever-popup.show {
-            display: block;
-            align-items: center;
-        }
-
-        .ever-popup__inner {
-            position: relative;
-            margin: 0 auto;
-            padding-top: 35px
-        }
-
-        .ever-popup__close {
-            width: 35px;
-            height: 30px;
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            right: 0;
-            z-index: 1;
-            -webkit-transition: .3s;
-            -moz-transition: .3s;
-            -ms-transition: .3s;
-            -o-transition: .3s;
-            transition: .3s;
-        }
-
-        .ever-popup__close:after,
-        .ever-popup__close:before {
-            content: "";
-            position: absolute;
-            right: 0;
-            top: 10px;
-            width: 35px;
-            height: 10px;
-            background: #fff;
-            transition: all 1s;
-        }
-
-        .ever-popup__close:after {
-            -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-        }
-
-        .ever-popup__close:before {
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
-
-        @media screen and (max-width: 999px) {
-            .ever-popup__body.ever-desktop {
-                display: none
-            }
-
-            .ever-popup__body.ever-mobile {
-                display: block
-            }
-        }
-    </style>
-    <style>
-        .phoneBtnContainer {
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-            visibility: hidden;
-            background-color: transparent;
-            width: 200px;
-            height: 200px;
-            cursor: pointer;
-            z-index: 99;
-            -webkit-backface-visibility: hidden;
-            -webkit-transform: translateZ(0);
-            -webkit-transition: visibility .5s;
-            -moz-transition: visibility .5s;
-            -o-transition: visibility .5s;
-            transition: visibility .5s
-        }
-
-        .cbh-phone.cbh-show {
-            visibility: visible
-        }
-
-        @-webkit-keyframes fadeInRight {
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(100%, 0, 0);
-                transform: translate3d(100%, 0, 0)
-            }
-
-            100% {
-                opacity: 1;
-                -webkit-transform: none;
-                transform: none
-            }
-        }
-
-        @keyframes fadeInRight {
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(100%, 0, 0);
-                -ms-transform: translate3d(100%, 0, 0);
-                transform: translate3d(100%, 0, 0)
-            }
-
-            100% {
-                opacity: 1;
-                -webkit-transform: none;
-                -ms-transform: none;
-                transform: none
-            }
-        }
-
-        @-webkit-keyframes fadeInRightBig {
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(2000px, 0, 0);
-                transform: translate3d(2000px, 0, 0)
-            }
-
-            100% {
-                opacity: 1;
-                -webkit-transform: none;
-                transform: none
-            }
-        }
-
-        @-webkit-keyframes fadeOutRight {
-            0% {
-                opacity: 1
-            }
-
-            100% {
-                opacity: 0;
-                -webkit-transform: translate3d(100%, 0, 0);
-                transform: translate3d(100%, 0, 0)
-            }
-        }
-
-        @keyframes fadeOutRight {
-            0% {
-                opacity: 1
-            }
-
-            100% {
-                opacity: 0;
-                -webkit-transform: translate3d(100%, 0, 0);
-                -ms-transform: translate3d(100%, 0, 0);
-                transform: translate3d(100%, 0, 0)
-            }
-        }
-
-        .fadeOutRight {
-            -webkit-animation-name: fadeOutRight;
-            animation-name: fadeOutRight
-        }
-
-        .cbh-phone.cbh-static1 {
-            opacity: .6
-        }
-
-        .cbh-phone.cbh-hover1 {
-            opacity: 1
-        }
-
-        .cbh-ph-circle {
-            width: 160px;
-            height: 160px;
-            top: 20px;
-            left: 20px;
-            position: absolute;
-            background-color: transparent;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            border-radius: 100%;
-            border: 2px solid rgba(30, 30, 30, .4);
-            opacity: .1;
-            -webkit-animation: cbh-circle-anim 1.2s infinite ease-in-out;
-            -moz-animation: cbh-circle-anim 1.2s infinite ease-in-out;
-            -ms-animation: cbh-circle-anim 1.2s infinite ease-in-out;
-            -o-animation: cbh-circle-anim 1.2s infinite ease-in-out;
-            animation: cbh-circle-anim 1.2s infinite ease-in-out;
-            -webkit-transition: all .5s;
-            -moz-transition: all .5s;
-            -o-transition: all .5s;
-            transition: all .5s
-        }
-
-        .cbh-phone.cbh-active .cbh-ph-circle1 {
-            -webkit-animation: cbh-circle-anim 1.1s infinite ease-in-out !important;
-            -moz-animation: cbh-circle-anim 1.1s infinite ease-in-out !important;
-            -ms-animation: cbh-circle-anim 1.1s infinite ease-in-out !important;
-            -o-animation: cbh-circle-anim 1.1s infinite ease-in-out !important;
-            animation: cbh-circle-anim 1.1s infinite ease-in-out !important
-        }
-
-        .cbh-phone.cbh-static .cbh-ph-circle {
-            -webkit-animation: cbh-circle-anim 2.2s infinite ease-in-out !important;
-            -moz-animation: cbh-circle-anim 2.2s infinite ease-in-out !important;
-            -ms-animation: cbh-circle-anim 2.2s infinite ease-in-out !important;
-            -o-animation: cbh-circle-anim 2.2s infinite ease-in-out !important;
-            animation: cbh-circle-anim 2.2s infinite ease-in-out !important
-        }
-
-        .cbh-phone.cbh-hover .cbh-ph-circle {
-            border-color: rgba(0, 175, 242, 1);
-            opacity: .5
-        }
-
-        .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle {
-            border-color: rgba(117, 235, 80, 1);
-            opacity: .5
-        }
-
-        .cbh-phone.cbh-green .cbh-ph-circle {
-            border-color: rgba(0, 175, 242, 1);
-            opacity: .5
-        }
-
-        .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle {
-            border-color: rgba(204, 204, 204, 1);
-            opacity: .5
-        }
-
-        .cbh-phone.cbh-gray .cbh-ph-circle {
-            border-color: rgba(117, 235, 80, 1);
-            opacity: .5
-        }
-
-        .cbh-ph-circle-fill {
-            width: 100px;
-            height: 100px;
-            top: 50px;
-            left: 50px;
-            position: absolute;
-            background-color: #000;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            border-radius: 100%;
-            border: 2px solid transparent;
-            opacity: .1;
-            -webkit-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
-            -moz-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
-            -ms-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
-            -o-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
-            animation: cbh-circle-fill-anim 2.3s infinite ease-in-out;
-            -webkit-transition: all .5s;
-            -moz-transition: all .5s;
-            -o-transition: all .5s;
-            transition: all .5s
-        }
-
-        .cbh-phone.cbh-active .cbh-ph-circle-fill {
-            -webkit-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important;
-            -moz-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important;
-            -ms-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important;
-            -o-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important;
-            animation: cbh-circle-fill-anim 1.7s infinite ease-in-out !important
-        }
-
-        .cbh-phone.cbh-static .cbh-ph-circle-fill {
-            -webkit-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
-            -moz-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
-            -ms-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
-            -o-animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
-            animation: cbh-circle-fill-anim 2.3s infinite ease-in-out !important;
-            opacity: 0 !important
-        }
-
-        .cbh-phone.cbh-hover .cbh-ph-circle-fill {
-            background-color: rgba(0, 175, 242, .5);
-            opacity: .75 !important
-        }
-
-        .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle-fill {
-            background-color: rgba(117, 235, 80, .5);
-            opacity: .75 !important
-        }
-
-        .cbh-phone.cbh-green .cbh-ph-circle-fill {
-            background-color: rgba(0, 175, 242, .5);
-            opacity: .75 !important
-        }
-
-        .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle-fill {
-            background-color: rgba(204, 204, 204, .5);
-            opacity: .75 !important
-        }
-
-        .cbh-phone.cbh-gray .cbh-ph-circle-fill {
-            background-color: rgba(117, 235, 80, .5);
-            opacity: .75 !important
-        }
-
-        .cbh-ph-img-circle1 {
-            width: 60px;
-            height: 60px;
-            top: 70px;
-            left: 70px;
-            position: absolute;
-            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAB/ElEQVR42uya7W3CMBCG31QM4A1aNggTlG6QbpBMkHYC1AloJ4BOABuEDcgGtBOETnD9c1ERCH/lwxeaV8oPFGP86Hy+DxMREW5Bd7gRjSDSNGn4/RiAOvm8C0ZCRD5PSkQVXSr1nK/xE3mcWimA1ZV3JYBZCIO4giQANoYxMwYS6+xKY4lT5dJPreWZY+uspqSCKPYN27GJVBDXheVSQe494ksiEWTuMXcu1dld9SARxDX1OAJ4lgjy4zDnFsC076A4adEiRwAZg4hOUSpNoCsBPDGM+HqkNGynYBCuILuWj+dgWysGsNe8nwL4GsrW0m2fxZBq9rW0rNcX5MOQ9eZD8JFahcG5g/iKT671alGAYQggpYWvpEPYWrU/HDTOfeRIX0q2SL3QN4tGhZJukVobQyXYWw7WtLDKDIuM+ZSzscyCE9PCy5IttCvnZNaeiGLNHKuz8ZVh/MXTVu/1xQKmIqLEAuJ0fNo3iG5B51oSkeKnsBi/4bG9gYB/lCytU5G9DryFW+3Gm+JLwU7ehbJrwTjq4DJU8bHcVbEV9dXXqqP6uqO5e2/QZRYJpqu2IUAA4B3tXvx8hgKp05QZW6dJqrLTNkB6vrRURLRwPHqtYgkC3cLWQAcDQGGKH13FER/NATzi786+BPDNjm1dMkfjn2pGkBHkf4D8DgBJDuDHx9BN+gAAAABJRU5ErkJggg==);
-            background-color: rgba(30, 30, 30, .1);
-            background-position: center center;
-            background-repeat: no-repeat;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            border-radius: 100%;
-            border: 2px solid transparent;
-            opacity: .7;
-            -webkit-animation: cbh-circle-img-anim 1s infinite ease-in-out;
-            -moz-animation: cbh-circle-img-anim 1s infinite ease-in-out;
-            -ms-animation: cbh-circle-img-anim 1s infinite ease-in-out;
-            -o-animation: cbh-circle-img-anim 1s infinite ease-in-out;
-            animation: cbh-circle-img-anim 1s infinite ease-in-out
-        }
-
-        .cbh-phone.cbh-active .cbh-ph-img-circle1 {
-            -webkit-animation: cbh-circle-img-anim 1s infinite ease-in-out !important;
-            -moz-animation: cbh-circle-img-anim 1s infinite ease-in-out !important;
-            -ms-animation: cbh-circle-img-anim 1s infinite ease-in-out !important;
-            -o-animation: cbh-circle-img-anim 1s infinite ease-in-out !important;
-            animation: cbh-circle-img-anim 1s infinite ease-in-out !important
-        }
-
-        .cbh-phone.cbh-static .cbh-ph-img-circle1 {
-            -webkit-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
-            -moz-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
-            -ms-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
-            -o-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
-            animation: cbh-circle-img-anim 0s infinite ease-in-out !important
-        }
-
-        .cbh-phone.cbh-hover .cbh-ph-img-circle1 {
-            background-color: rgba(0, 175, 242, 1)
-        }
-
-        .cbh-phone.cbh-green.cbh-hover .cbh-ph-img-circle1:hover {
-            background-color: rgba(117, 235, 80, 1)
-        }
-
-        .cbh-phone.cbh-green .cbh-ph-img-circle1 {
-            background-color: rgba(0, 175, 242, 1)
-        }
-
-        .cbh-phone.cbh-green .cbh-ph-img-circle1 {
-            background-color: rgba(0, 175, 242, 1)
-        }
-
-        .cbh-phone.cbh-gray.cbh-hover .cbh-ph-img-circle1 {
-            background-color: rgba(204, 204, 204, 1)
-        }
-
-        .cbh-phone.cbh-gray .cbh-ph-img-circle1 {
-            background-color: rgba(117, 235, 80, 1)
-        }
-
-        @-moz-keyframes cbh-circle-anim {
-            0% {
-                -moz-transform: rotate(0deg) scale(0.5) skew(1deg);
-                opacity: .1;
-                -moz-opacity: .1;
-                -webkit-opacity: .1;
-                -o-opacity: .1
-            }
-
-            30% {
-                -moz-transform: rotate(0deg) scale(.7) skew(1deg);
-                opacity: .5;
-                -moz-opacity: .5;
-                -webkit-opacity: .5;
-                -o-opacity: .5
-            }
-
-            100% {
-                -moz-transform: rotate(0deg) scale(1) skew(1deg);
-                opacity: .6;
-                -moz-opacity: .6;
-                -webkit-opacity: .6;
-                -o-opacity: .1
-            }
-        }
-
-        @-webkit-keyframes cbh-circle-anim {
-            0% {
-                -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
-                -webkit-opacity: .1
-            }
-
-            30% {
-                -webkit-transform: rotate(0deg) scale(.7) skew(1deg);
-                -webkit-opacity: .5
-            }
-
-            100% {
-                -webkit-transform: rotate(0deg) scale(1) skew(1deg);
-                -webkit-opacity: .1
-            }
-        }
-
-        @-o-keyframes cbh-circle-anim {
-            0% {
-                -o-transform: rotate(0deg) kscale(0.5) skew(1deg);
-                -o-opacity: .1
-            }
-
-            30% {
-                -o-transform: rotate(0deg) scale(.7) skew(1deg);
-                -o-opacity: .5
-            }
-
-            100% {
-                -o-transform: rotate(0deg) scale(1) skew(1deg);
-                -o-opacity: .1
-            }
-        }
-
-        @keyframes cbh-circle-anim {
-            0% {
-                transform: rotate(0deg) scale(0.5) skew(1deg);
-                opacity: .1
-            }
-
-            30% {
-                transform: rotate(0deg) scale(.7) skew(1deg);
-                opacity: .5
-            }
-
-            100% {
-                transform: rotate(0deg) scale(1) skew(1deg);
-                opacity: .1
-            }
-        }
-
-        @-moz-keyframes cbh-circle-fill-anim {
-            0% {
-                -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
-                opacity: .2
-            }
-
-            50% {
-                -moz-transform: rotate(0deg) -moz-scale(1) skew(1deg);
-                opacity: .2
-            }
-
-            100% {
-                -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
-                opacity: .2
-            }
-        }
-
-        @-webkit-keyframes cbh-circle-fill-anim {
-            0% {
-                -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
-                opacity: .2
-            }
-
-            50% {
-                -webkit-transform: rotate(0deg) scale(1) skew(1deg);
-                opacity: .2
-            }
-
-            100% {
-                -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
-                opacity: .2
-            }
-        }
-
-        @-o-keyframes cbh-circle-fill-anim {
-            0% {
-                -o-transform: rotate(0deg) scale(0.7) skew(1deg);
-                opacity: .2
-            }
-
-            50% {
-                -o-transform: rotate(0deg) scale(1) skew(1deg);
-                opacity: .2
-            }
-
-            100% {
-                -o-transform: rotate(0deg) scale(0.7) skew(1deg);
-                opacity: .2
-            }
-        }
-
-        @keyframes cbh-circle-fill-anim {
-            0% {
-                transform: rotate(0deg) scale(0.7) skew(1deg);
-                opacity: .2
-            }
-
-            50% {
-                transform: rotate(0deg) scale(1) skew(1deg);
-                opacity: .2
-            }
-
-            100% {
-                transform: rotate(0deg) scale(0.7) skew(1deg);
-                opacity: .2
-            }
-        }
-
-        @keyframes cbh-circle-img-anim {
-            0% {
-                transform: rotate(0deg) scale(1) skew(1deg)
-            }
-
-            10% {
-                transform: rotate(-25deg) scale(1) skew(1deg)
-            }
-
-            20% {
-                transform: rotate(25deg) scale(1) skew(1deg)
-            }
-
-            30% {
-                transform: rotate(-25deg) scale(1) skew(1deg)
-            }
-
-            40% {
-                transform: rotate(25deg) scale(1) skew(1deg)
-            }
-
-            100%,
-            50% {
-                transform: rotate(0deg) scale(1) skew(1deg)
-            }
-        }
-
-        @-moz-keyframes cbh-circle-img-anim {
-            0% {
-                transform: rotate(0deg) scale(1) skew(1deg)
-            }
-
-            10% {
-                -moz-transform: rotate(-25deg) scale(1) skew(1deg)
-            }
-
-            20% {
-                -moz-transform: rotate(25deg) scale(1) skew(1deg)
-            }
-
-            30% {
-                -moz-transform: rotate(-25deg) scale(1) skew(1deg)
-            }
-
-            40% {
-                -moz-transform: rotate(25deg) scale(1) skew(1deg)
-            }
-
-            100%,
-            50% {
-                -moz-transform: rotate(0deg) scale(1) skew(1deg)
-            }
-        }
-
-        @-webkit-keyframes cbh-circle-img-anim {
-            0% {
-                -webkit-transform: rotate(0deg) scale(1) skew(1deg)
-            }
-
-            10% {
-                -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
-            }
-
-            20% {
-                -webkit-transform: rotate(25deg) scale(1) skew(1deg)
-            }
-
-            30% {
-                -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
-            }
-
-            40% {
-                -webkit-transform: rotate(25deg) scale(1) skew(1deg)
-            }
-
-            100%,
-            50% {
-                -webkit-transform: rotate(0deg) scale(1) skew(1deg)
-            }
-        }
-
-        @-o-keyframes cbh-circle-img-anim {
-            0% {
-                -o-transform: rotate(0deg) scale(1) skew(1deg)
-            }
-
-            10% {
-                -o-transform: rotate(-25deg) scale(1) skew(1deg)
-            }
-
-            20% {
-                -o-transform: rotate(25deg) scale(1) skew(1deg)
-            }
-
-            30% {
-                -o-transform: rotate(-25deg) scale(1) skew(1deg)
-            }
-
-            40% {
-                -o-transform: rotate(25deg) scale(1) skew(1deg)
-            }
-
-            100%,
-            50% {
-                -o-transform: rotate(0deg) scale(1) skew(1deg)
-            }
-        }
-
-        .cbh-ph-img-circle1 {}
-
-        .cbh-phone.cbh-green .cbh-ph-circle {
-            border-color: rgba(0, 175, 242, 1)
-        }
-
-        .cbh-phone.cbh-green .cbh-ph-circle-fill {
-            background-color: rgba(0, 175, 242, 1);
-        }
-
-        .cbh-phone.cbh-green .cbh-ph-img-circle1 {
-            background-color: rgba(0, 175, 242, 1);
-        }
-
-        body,
-        div,
-        dl,
-        dt,
-        dd,
-        ul,
-        ol,
-        li,
-        nav,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        pre,
-        code,
-        form,
-        fieldset,
-        legend,
-        input,
-        button,
-        textarea,
-        p,
-        blockquote,
-        th,
-        td,
-        a {
-            -webkit-transform-origin: center center;
-            -ms-transform-origin: center center;
-            -o-transform-origin: center center;
-            transform-origin: center center;
-        }
-
-        @media screen and (max-width: 999px) {
-            #clbh_phone_div {
-                display: none !important;
-            }
-        }
-    </style>
-    <link type="text/css" rel="stylesheet" charset="UTF-8" href="../Скинни%20LQD_files/translateelement(1).css">
 </head>
 <!-- INTH_SNIPPET_TOP -->
 
@@ -1446,8 +1428,7 @@
                     </span>
                 </div>
                 <ul class="navigation_list">
-                    <li class="navigation_list-item"><a class="to-scroll" data-scroll="works"
-                            href="file:///Users/admn/Downloads/Telegram%20Desktop/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F/%D0%BB%D0%B5%D0%BD%D0%B4/main%20(5)/index.html#">
+                    <li class="navigation_list-item"><a class="to-scroll" data-scroll="works"  href="/index.html#">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">
@@ -1458,7 +1439,7 @@
                         </a>
                     </li>
                     <li class="navigation_list-item"><a class="to-scroll" data-scroll="faq"
-                            href="file:///Users/admn/Downloads/Telegram%20Desktop/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F/%D0%BB%D0%B5%D0%BD%D0%B4/main%20(5)/index.html#">
+                            href="/#">
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">
@@ -1468,7 +1449,7 @@
                             </font>
                         </a></li>
                     <li class="navigation_list-item active"><a class="ever-popup-btn" data-scroll="order_form"
-                            href="file:///Users/admn/Downloads/Telegram%20Desktop/%D1%80%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F/%D0%BB%D0%B5%D0%BD%D0%B4/main%20(5)/index.html#"><i
+                            href="/#"><i
                                 class="icon-basket"></i>
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">
@@ -1517,7 +1498,7 @@
                     <div class="mobile_wrapper">
                         <div class="_woman"></div>
                         <div class="prod_wrapper">
-                            <img alt="" class="_prod" src="../Скинни%20LQD_files/product.png">
+                            <img alt="" class="_prod" src="data/product.png">
                         </div>
                     </div>
                     <button class="btn ever-popup-btn">
@@ -1540,7 +1521,7 @@
                         <ul class="works-list">
                             <li class="works-list_item _1">
                                 <div class="circle">
-                                    <img alt="" src="../Скинни%20LQD_files/wk1.png">
+                                    <img alt="" src="data/wk1.png">
                                 </div>
                                 <p>
                                     <font style="vertical-align: inherit;">
@@ -1556,7 +1537,7 @@
                             </li>
                             <li class="works-list_item _2 _w50 _pr">
                                 <div class="circle">
-                                    <img alt="" src="../Скинни%20LQD_files/wk5.png">
+                                    <img alt="" src="data/wk5.png">
                                 </div>
                                 <p>
                                     <font style="vertical-align: inherit;">
@@ -1572,7 +1553,7 @@
                             </li>
                             <li class="works-list_item _3 _w50 _pl">
                                 <div class="circle">
-                                    <img alt="" src="../Скинни%20LQD_files/wk2.png">
+                                    <img alt="" src="data/wk2.png">
                                 </div>
                                 <p>
                                     <font style="vertical-align: inherit;">
@@ -1588,7 +1569,7 @@
                             </li>
                             <li class="works-list_item _4 _w50 _pl2">
                                 <div class="circle">
-                                    <img alt="" src="../Скинни%20LQD_files/wk4.png">
+                                    <img alt="" src="data/wk4.png">
                                 </div>
                                 <p>
                                     <font style="vertical-align: inherit;">
@@ -1604,7 +1585,7 @@
                             </li>
                             <li class="works-list_item _5 _w50 _pr2">
                                 <div class="circle">
-                                    <img alt="" src="../Скинни%20LQD_files/wk3.png">
+                                    <img alt="" src="data/wk3.png">
                                 </div>
                                 <p>
                                     <font style="vertical-align: inherit;">
@@ -1784,7 +1765,7 @@
             <div class="limit">
                 <div class="diet-wrap">
                     <div class="diet-left _abs">
-                        <img src="../Скинни%20LQD_files/diet-image.png" alt="изображение">
+                        <img src="data/diet-image.png" alt="изображение">
                     </div>
                     <div class="diet-right">
                         <h2 class="title diet-title">
@@ -1974,7 +1955,7 @@
                         </h2>
                         <ul class="weight-list">
                             <li class="weight-list_item">
-                                <img alt="" src="../Скинни%20LQD_files/wh1.png">
+                                <img alt="" src="data/wh1.png">
                                 <p class="item-text">
                                     <b>
                                         <font style="vertical-align: inherit;">
@@ -1991,7 +1972,7 @@
                                 </p>
                             </li>
                             <li class="weight-list_item">
-                                <img alt="" src="../Скинни%20LQD_files/wh2.png">
+                                <img alt="" src="data/wh2.png">
                                 <p class="item-text">
                                     <b>
                                         <font style="vertical-align: inherit;">
@@ -2008,7 +1989,7 @@
                                 </p>
                             </li>
                             <li class="weight-list_item">
-                                <img alt="" src="../Скинни%20LQD_files/wh3.png">
+                                <img alt="" src="data/wh3.png">
                                 <p class="item-text">
                                     <b>
                                         <font style="vertical-align: inherit;">
@@ -2042,7 +2023,7 @@
                     <li class="choice-list_item">
                         <div class="wrapper-item">
                             <div class="image-block">
-                                <img alt="" src="../Скинни%20LQD_files/ch1.png">
+                                <img alt="" src="data/ch1.png">
                             </div>
                             <div class="choice-list__content">
                                 <p class="name">
@@ -2090,7 +2071,7 @@
                     <li class="choice-list_item">
                         <div class="wrapper-item">
                             <div class="image-block">
-                                <img alt="" src="../Скинни%20LQD_files/ch2.png">
+                                <img alt="" src="data/ch2.png">
                             </div>
                             <div class="choice-list__content">
                                 <p class="name">
@@ -2138,7 +2119,7 @@
                     <li class="choice-list_item">
                         <div class="wrapper-item">
                             <div class="image-block">
-                                <img alt="" src="../Скинни%20LQD_files/product.png">
+                                <img alt="" src="data/product.png">
                             </div>
                             <div class="choice-list__content">
                                 <p class="name">
@@ -2191,7 +2172,7 @@
                     <li class="choice-list_item">
                         <div class="wrapper-item">
                             <div class="image-block">
-                                <img alt="" src="../Скинни%20LQD_files/ch3.png">
+                                <img alt="" src="data/ch3.png">
                             </div>
                             <div class="choice-list__content">
                                 <p class="name">
@@ -2236,7 +2217,7 @@
                     <li class="choice-list_item">
                         <div class="wrapper-item">
                             <div class="image-block">
-                                <img alt="" src="../Скинни%20LQD_files/ch4.png">
+                                <img alt="" src="data/ch4.png">
                             </div>
                             <div class="choice-list__content">
                                 <p class="name">
@@ -2307,7 +2288,7 @@
                         <div class="_exclusive-left__circle"></div>
                     </div>
                     <p class="border text">
-                        <img alt="" class="_prize" src="../Скинни%20LQD_files/prize.png">
+                        <img alt="" class="_prize" src="data/prize.png">
                         <b>
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Ofertă exclusivă - </font>
@@ -2339,7 +2320,7 @@
                         <div class="inst__header">
                             <div class="inst__header-left">
                                 <div class="inst__header-fit">
-                                    <img src="../Скинни%20LQD_files/avatar3.jpg" alt="продукт">
+                                    <img src="data/avatar3.jpg" alt="продукт">
                                 </div>
                                 <p class="inst__header-title"><b>
                                         <font style="vertical-align: inherit;">
@@ -2354,22 +2335,22 @@
                             </div>
                         </div>
                         <div class="inst__img">
-                            <img src="../Скинни%20LQD_files/rev2.jpg" alt="горка">
+                            <img src="data/rev2.jpg" alt="горка">
                         </div>
                         <div class="inst__control">
                             <ul class="inst__control-soc">
-                                <li class="inst__control-item"><img src="../Скинни%20LQD_files/inst_like.png"
+                                <li class="inst__control-item"><img src="data/inst_like.png"
                                         alt="нравиться">
                                 </li>
                                 <li class="inst__control-item">
-                                    <img src="../Скинни%20LQD_files/inst_comment.png" alt="комментарий">
+                                    <img src="data/inst_comment.png" alt="комментарий">
                                 </li>
                                 <li class="inst__control-item">
-                                    <img src="../Скинни%20LQD_files/inst_share.png" alt="Compartir">
+                                    <img src="data/inst_share.png" alt="Compartir">
                                 </li>
                             </ul>
                             <div class="inst__control-last">
-                                <img src="../Скинни%20LQD_files/inst_add.png" alt="Добавлять">
+                                <img src="data/inst_add.png" alt="Добавлять">
                             </div>
                         </div>
                         <div class="inst__description">
@@ -2408,7 +2389,7 @@
                         <div class="inst__header">
                             <div class="inst__header-left">
                                 <div class="inst__header-fit">
-                                    <img src="../Скинни%20LQD_files/ava2.png" alt="продукт">
+                                    <img src="data/ava2.png" alt="продукт">
                                 </div>
                                 <p class="inst__header-title"><b>
                                         <font style="vertical-align: inherit;">
@@ -2423,22 +2404,22 @@
                             </div>
                         </div>
                         <div class="inst__img">
-                            <img src="../Скинни%20LQD_files/rev1.jpg" alt="горка">
+                            <img src="data/rev1.jpg" alt="горка">
                         </div>
                         <div class="inst__control">
                             <ul class="inst__control-soc">
                                 <li class="inst__control-item">
-                                    <img src="../Скинни%20LQD_files/inst_like.png" alt="нравиться">
+                                    <img src="data/inst_like.png" alt="нравиться">
                                 </li>
                                 <li class="inst__control-item">
-                                    <img src="../Скинни%20LQD_files/inst_comment.png" alt="комментарий">
+                                    <img src="data/inst_comment.png" alt="комментарий">
                                 </li>
                                 <li class="inst__control-item">
-                                    <img src="../Скинни%20LQD_files/inst_share.png" alt="Compartir">
+                                    <img src="data/inst_share.png" alt="Compartir">
                                 </li>
                             </ul>
                             <div class="inst__control-last">
-                                <img src="../Скинни%20LQD_files/inst_add.png" alt="Добавлять">
+                                <img src="data/inst_add.png" alt="Добавлять">
                             </div>
                         </div>
                         <div class="inst__description">
@@ -2476,7 +2457,7 @@
                         <div class="inst__header">
                             <div class="inst__header-left">
                                 <div class="inst__header-fit">
-                                    <img src="../Скинни%20LQD_files/avatar1.jpg" alt="продукт">
+                                    <img src="data/avatar1.jpg" alt="продукт">
                                 </div>
                                 <p class="inst__header-title"><b>
                                         <font style="vertical-align: inherit;">
@@ -2491,22 +2472,22 @@
                             </div>
                         </div>
                         <div class="inst__img">
-                            <img src="../Скинни%20LQD_files/rev3.jpg" alt="горка">
+                            <img src="data/rev3.jpg" alt="горка">
                         </div>
                         <div class="inst__control">
                             <ul class="inst__control-soc">
                                 <li class="inst__control-item">
-                                    <img src="../Скинни%20LQD_files/inst_like.png" alt="нравиться">
+                                    <img src="data/inst_like.png" alt="нравиться">
                                 </li>
                                 <li class="inst__control-item">
-                                    <img src="../Скинни%20LQD_files/inst_comment.png" alt="комментарий">
+                                    <img src="data/inst_comment.png" alt="комментарий">
                                 </li>
                                 <li class="inst__control-item">
-                                    <img src="../Скинни%20LQD_files/inst_share.png" alt="Compartir">
+                                    <img src="data/inst_share.png" alt="Compartir">
                                 </li>
                             </ul>
                             <div class="inst__control-last">
-                                <img src="../Скинни%20LQD_files/inst_add.png" alt="Добавлять">
+                                <img src="data/inst_add.png" alt="Добавлять">
                             </div>
                         </div>
                         <div class="inst__description">
@@ -2884,7 +2865,7 @@
         <div class="my-popup" id="cloneThis">
             <div class="popup-wrap">
                 <div class="popup-product">
-                    <img src="../Скинни%20LQD_files/product.png" alt="изображение">
+                    <img src="data/product.png" alt="изображение">
                 </div>
                 <div class="form popup-form">
                     <p class="form-title">
@@ -2956,7 +2937,6 @@
         </div>
     </div>
 
-    <script src="../Скинни%20LQD_files/index.js"></script>
 
 
 
@@ -2969,7 +2949,7 @@
             <div class="my-popup ever-popup__body">
                 <div class="popup-wrap">
                     <div class="popup-product">
-                        <img src="../Скинни%20LQD_files/product.png" alt="image">
+                        <img src="data/product.png" alt="image">
                     </div>
                     <div class="form popup-form">
                         <p class="form-title">
@@ -3008,7 +2988,7 @@
             <div class="my-popup ever-popup__body">
                 <div class="popup-wrap">
                     <div class="popup-product">
-                        <img src="../Скинни%20LQD_files/product.png" alt="image">
+                        <img src="data/product.png" alt="image">
                     </div>
                     <div class="form popup-form">
                         <p class="form-title">
@@ -3065,18 +3045,7 @@
             <div class="ever-popup__close"></div>
         </div>
     </div>
-    
-    <div class="phoneBtnContainer">
-        <div class="bluePhone">
-            <div class=" phone-call cbh-phone cbh-green cbh-show ever-popup-btn cbh-static" id="clbh_phone_div">
-                <div class="phoneJs">
-                    <div class="cbh-ph-circle"></div>
-                    <div class="cbh-ph-circle-fill"></div>
-                    <div class="cbh-ph-img-circle1"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+
    
 </body>
 
