@@ -123,14 +123,14 @@ h3.title {
   color: #10132d; }
 
 .first {
-  background: url("http://ita-ketolight.beauty-shopping.net/img/first-back.png") 573px top no-repeat, #0091e4;
+  background: url("//ita-ketolight.beauty-shopping.net/img/first-back.png") 573px top no-repeat, #0091e4;
   background-size: auto 100%;
   min-height: 653px;
   position: relative;
   z-index: 1; }
   .first ._flower {
     position: absolute;
-    background: url("http://ita-ketolight.beauty-shopping.net/img/flower-first.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/flower-first.png") center no-repeat;
     width: 1960px;
     height: 729px;
     left: 51.7%;
@@ -143,7 +143,7 @@ h3.title {
     min-height: 653px;
     height: 1px; }
   .first ._woman {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/woman.png") center bottom no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/woman.png") center bottom no-repeat;
     background-size: contain;
     width: 523px;
     height: 754px;
@@ -294,7 +294,7 @@ p.text {
     margin-top: 20px;
   }
   .eating ._molecule {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/molekula.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/molekula.png") center no-repeat;
     background-size: contain;
     position: absolute;
     pointer-events: none;
@@ -331,7 +331,7 @@ p.text {
       left: 96%;
       bottom: 0; }
     .eating-right ._woman2 {
-      background: url("http://ita-ketolight.beauty-shopping.net/img/woman2.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/woman2.png") center no-repeat;
       background-size: contain;
       width: 533px;
       height: 700px;
@@ -340,7 +340,7 @@ p.text {
       left: 0;
       bottom: 0; }
     .eating-right ._circle {
-      background: url("http://ita-ketolight.beauty-shopping.net/img/eating-back.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/eating-back.png") center no-repeat;
       background-size: contain;
       width: 1200px;
       height: 100%;
@@ -435,7 +435,7 @@ p.text {
     .works .works-list_item:before {
       content: '';
       position: absolute;
-      background: url("http://ita-ketolight.beauty-shopping.net/img/circle-arrow.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/circle-arrow.png") center no-repeat;
       width: 26px;
       height: 29px; }
     .works .works-list_item._1::before {
@@ -567,11 +567,11 @@ p.text {
     -webkit-transform: rotate(25deg);
             transform: rotate(25deg);
     height: 160px;
-    background: url("http://ita-ketolight.beauty-shopping.net/img/product-another.png") no-repeat center/contain;
+    background: url("//ita-ketolight.beauty-shopping.net/img/product-another.png") no-repeat center/contain;
   }
   .card-left_back {
     pointer-events: none;
-    background: url("http://ita-ketolight.beauty-shopping.net/img/card-left.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/card-left.png") center no-repeat;
     width: 1000px;
     height: 100%;
     position: absolute;
@@ -580,7 +580,7 @@ p.text {
     top: 0; }
   .card-right_back {
     pointer-events: none;
-    background: url("http://ita-ketolight.beauty-shopping.net/img/card-right.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/card-right.png") center no-repeat;
     width: 700px;
     height: 100%;
     position: absolute;
@@ -597,7 +597,7 @@ p.text {
   overflow: hidden;
   background-size: auto 100%; }
   .weight .dotted {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/dotted.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/dotted.png") center no-repeat;
     width: 182px;
     height: 359px;
     position: absolute;
@@ -617,7 +617,7 @@ p.text {
     position: relative;
     height: 100%; }
   .weight ._woman3 {
-    background:  url("http://ita-ketolight.beauty-shopping.net/img/woman3.png") center bottom no-repeat;
+    background:  url("//ita-ketolight.beauty-shopping.net/img/woman3.png") center bottom no-repeat;
     background-size: contain;
     z-index: 3;
     width: 701px;
@@ -628,7 +628,7 @@ p.text {
     bottom: -40px;
     max-width: none; }
   .weight ._weight-left__circle {
-  background:  url("http://ita-ketolight.beauty-shopping.net/img/weight-back.png") center bottom no-repeat;
+  background:  url("//ita-ketolight.beauty-shopping.net/img/weight-back.png") center bottom no-repeat;
   background-size: contain;
   width: 1200px;
   height: 100%;
@@ -702,7 +702,7 @@ p.text {
     display: block;
     margin: 0 auto;
     padding: 40px 30px;
-    background: url("http://ita-ketolight.beauty-shopping.net/img/back_place.jpg") right center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/back_place.jpg") right center no-repeat;
     width: 100%;
     -webkit-box-shadow: 0px 0px 38px 0px rgba(16, 19, 45, 0.15);
     box-shadow: 0px 0px 38px 0px rgba(16, 19, 45, 0.15);
@@ -757,7 +757,7 @@ p.text {
       position: absolute;
       left: -10px;
       top: -30px;
-      background: url("http://ita-ketolight.beauty-shopping.net/img/ico_circle.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/ico_circle.png") center no-repeat;
       width: 99px;
       height: 99px; }
 
@@ -849,7 +849,7 @@ p.text {
   background-size: auto 100%;
   overflow: hidden; }
   ._exclusive-left__circle {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/exclusivet-back.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/exclusivet-back.png") center no-repeat;
     background-size: contain;
     width: 1200px;
     height: 100%;
@@ -865,7 +865,7 @@ p.text {
     position: absolute;
     right: -99px;
     bottom: 10px;
-    background: url("http://ita-ketolight.beauty-shopping.net/img/dotted_2.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/dotted_2.png") center no-repeat;
     width: 296px;
     height: 295px;
     pointer-events: none; }
@@ -881,7 +881,7 @@ p.text {
       top: 0;
       left: -154.5%; }
     .exclusive-left ._woman5 {
-      background: url("http://ita-ketolight.beauty-shopping.net/img/woman5.png") center bottom no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/woman5.png") center bottom no-repeat;
       width: 690px;
       height: 574px;
       z-index: 3;
@@ -956,12 +956,12 @@ p.text {
       position: absolute;
       left: -396px;
       top: -100px;
-      background: url("http://ita-ketolight.beauty-shopping.net/img/faq_back.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/faq_back.png") center no-repeat;
       width: 1400px;
       height: 910px;
       background-size: contain; }
     .faq-right ._prod {
-      background: url("http://ita-ketolight.beauty-shopping.net/img/product.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/product.png") center no-repeat;
       background-size: contain;
       width: 157px;
       height: 331px;
@@ -972,7 +972,7 @@ p.text {
       -webkit-transform: rotate(20deg);
               transform: rotate(20deg);}
     .faq-right ._prod2 {
-      background: url("http://ita-ketolight.beauty-shopping.net/img/product.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/product.png") center no-repeat;
       background-size: contain;
       width: 157px;
       height: 331px;
@@ -1018,7 +1018,7 @@ p.text {
       position: absolute;
       left: 9px;
       top: 12px;
-      background: url("http://ita-ketolight.beauty-shopping.net/img/arrow-fsq.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/arrow-fsq.png") center no-repeat;
       width: 13px;
       height: 8px;
       -webkit-transform: rotate(180deg);
@@ -1275,7 +1275,7 @@ p.text {
   background: #0091e4; }
 .last ._flower {
   position: absolute;
-  background: url("http://ita-ketolight.beauty-shopping.net/img/flower-footer.png") no-repeat;
+  background: url("//ita-ketolight.beauty-shopping.net/img/flower-footer.png") no-repeat;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -1306,7 +1306,7 @@ p.text {
     left: 100%; }
     .last-right .back {
       pointer-events: none;
-      background: url("http://ita-ketolight.beauty-shopping.net/img/last-back.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/last-back.png") center no-repeat;
       width: 1434px;
       height: 100%;
       position: absolute;
@@ -1314,7 +1314,7 @@ p.text {
       bottom: 0; }
     .last-right ._prod {
       position: absolute;
-      background: url("http://ita-ketolight.beauty-shopping.net/img/product.png") center no-repeat;
+      background: url("//ita-ketolight.beauty-shopping.net/img/product.png") center no-repeat;
       width: 500px;
       height: 500px;
       left: -168px;
@@ -1327,7 +1327,7 @@ p.text {
     z-index: 1;
     margin-top: 56px; }
   .last ._woman6 {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/woman6.png") center bottom no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/woman6.png") center bottom no-repeat;
     width: 489px;
     height: 840px;
     background-size: contain;
@@ -1492,7 +1492,7 @@ p.text {
   display: block;
   text-align: center; }
   .arrow .next, .arrow .prev {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/arrow_slider.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/arrow_slider.png") center no-repeat;
     width: 48px;
     height: 48px;
     cursor: pointer;
@@ -2195,7 +2195,7 @@ li {
     margin-bottom: 0; }
 
   .first ._woman {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/woman.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/woman.png") center no-repeat;
     background-size: contain;
     width: 200px;
     height: 300px;
@@ -2330,7 +2330,7 @@ li {
     z-index: 2; }
 
   .eating-right ._woman2 {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/woman2_mobile.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/woman2_mobile.png") center no-repeat;
     width: 784px;
     height: 804px;
     position: absolute;
@@ -2474,7 +2474,7 @@ li {
       margin-bottom: 0; }
 
   .card-left_back {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/card-left.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/card-left.png") center no-repeat;
     background-size: contain;
     width: 637px;
     height: 522px;
@@ -2628,7 +2628,7 @@ li {
     max-width: 100%;
     width: 50%;
     padding: 10px;
-    background: url("http://ita-ketolight.beauty-shopping.net/img/back_place.jpg") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/back_place.jpg") center no-repeat;
     background-size: cover;
     border-radius: 8px;
     margin: 0;
@@ -2718,7 +2718,7 @@ li {
     min-height: 1px; }
 
   .exclusive-left ._woman5 {
-    background: url("http://ita-ketolight.beauty-shopping.net/img/woman5_mobile.png") center no-repeat;
+    background: url("//ita-ketolight.beauty-shopping.net/img/woman5_mobile.png") center no-repeat;
     background-size: contain;
     width: 778px;
     height: 806px; }
@@ -2809,7 +2809,7 @@ li {
         -ms-flex: none;
             flex: none;
     margin-right: 10px;
-    background: #0091e4 url("http://ita-ketolight.beauty-shopping.net/img/arrow-fsq.png") center no-repeat;
+    background: #0091e4 url("//ita-ketolight.beauty-shopping.net/img/arrow-fsq.png") center no-repeat;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
     display: inline-block;}
