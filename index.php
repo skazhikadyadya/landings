@@ -699,7 +699,7 @@
                     <p class="form-title">
                         Comanda
                     </p>
-                    <form  method="post" class="orderForm  order_form x_order_form al-form">
+                    <form  method="post" class="orderForm  order_form x_order_form al-form" action="/done.php" >
                         <div class="price">
                             <div class="old">
                                 <p class="price-title price-title_old">Prețul inițial:</p>
@@ -721,6 +721,7 @@
                             Cumpărați!
                         </button>
                         <p class="price-descr">* reducere 50%</p>
+                        <input type="hidden" name="source" class="source" value="<?php echo isset($_REQUEST['utm_source']) ? $_REQUEST['utm_source'] : 'UTM is empty' ;?>" />
                     </form>
                 </div>
             </div>
@@ -738,7 +739,7 @@
                 <p class="form-title">
                     Comandă
                 </p>
-                <form  method="post" class="orderForm  order_form x_order_form al-form">
+                <form  method="post" class="orderForm  order_form x_order_form al-form" action="/done.php">
                     <div class="price">
                         <div class="old">
                             <p class="price-title price-title_old">Prețul inițial:</p>
@@ -760,6 +761,7 @@
                         Cumpărați!
                     </button>
                     <p class="price-descr">* sconto del 50%</p>
+                    <input type="hidden" name="source" class="source" value="<?php echo isset($_REQUEST['utm_source']) ? $_REQUEST['utm_source'] : 'UTM is empty' ;?>" />
                 </form>
             </div>
         </div>
