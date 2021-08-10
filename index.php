@@ -704,13 +704,13 @@
                             <div class="old">
                                 <p class="price-title price-title_old">Prețul inițial:</p>
                                 <div class="price-content price-content_old">
-                                    <span class="x_price_previous al-raw-cost-promo">78</span><span class="x_currency al-raw-currency">&euro;</span>
+                                    <span class="x_price_previous al-raw-cost-promo">318</span><span class="x_currency al-raw-currency">RON</span>
                                 </div>
                             </div>
                             <div class="new">
                                 <p class="price-title price-title_new">Prețul cu reducere:</p>
                                 <div class="price-content price-content_new">
-                                    <span class="x_price_current al-raw-cost">39</span><span class="x_currency al-raw-currency">&euro;</span>
+                                    <span class="x_price_current al-raw-cost">159</span><span class="x_currency al-raw-currency">RON</span>
                                 </div>
                             </div>
                         </div>
@@ -743,13 +743,13 @@
                         <div class="old">
                             <p class="price-title price-title_old">Prețul inițial:</p>
                             <div class="price-content price-content_old">
-                                <span class="x_price_previous al-raw-cost-promo">78</span><span class="x_currency al-raw-currency">&euro;</span>
+                                <span class="x_price_previous al-raw-cost-promo">318</span><span class="x_currency al-raw-currency">RON</span>
                             </div>
                         </div>
                         <div class="new">
                             <p class="price-title price-title_new">Prețul cu reducere:</p>
                             <div class="price-content price-content_new">
-                                <span class="x_price_current al-raw-cost">39</span><span class="x_currency al-raw-currency">&euro;</span>
+                                <span class="x_price_current al-raw-cost">159</span><span class="x_currency al-raw-currency">RON</span>
                             </div>
                         </div>
                     </div>
